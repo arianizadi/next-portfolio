@@ -2,10 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  @apply bg-black text-white scroll-smooth overflow-x-hidden;
+html::-webkit-scrollbar {
+  display: none
 }
 
-* {
-  @apply z-0;
+html {
+  @apply bg-black text-white scroll-smooth overflow-x-hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
