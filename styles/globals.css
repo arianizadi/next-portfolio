@@ -6,7 +6,7 @@ html::-webkit-scrollbar {
   display: none
 }
 
-html, :root, body {
+html, :root {
   @apply bg-black text-white scroll-smooth overflow-x-hidden cursor-default;
   -ms-overflow-style: none;
   scrollbar-width: none;
