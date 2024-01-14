@@ -7,7 +7,7 @@ html::-webkit-scrollbar {
 }
 
 html {
-  @apply bg-black text-white scroll-smooth overflow-x-hidden;
+  @apply bg-black text-white scroll-smooth overflow-x-hidden cursor-default;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
