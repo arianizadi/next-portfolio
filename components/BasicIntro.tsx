@@ -15,7 +15,7 @@ export function BasicIntro() {
     const timeline = gsap.timeline();
 
     timeline.to("#rocket", {
-      y: -350,
+      y: -400,
       duration: 1,
       ease: "power2.inOut",
       scrollTrigger: {
