@@ -5,11 +5,12 @@ const font = Geologica({ subsets: ['latin'] })
 
 export function NavBar() {
   return (
-    <main className={`flex justify-center text-center w-screen fixed items-center px-10 py-5 text-lg ${font.className}`}>
-      <div className="flex space-x-10">
-        {/* <Link href='/'>Home</Link> */}
-        {/* <Link href='#'>Projects</Link> */}
-      </div>
-    </main>
+    <main></main>
+    // <main className={`flex justify-center text-center w-screen fixed items-center px-10 py-5 text-lg ${font.className}`}>
+    //   <div className="flex space-x-10">
+    //     <Link href='/'>Home</Link>
+    //     <Link href='#'>Projects</Link>
+    //   </div>
+    // </main>
   )
 }

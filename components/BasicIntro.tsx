@@ -1,6 +1,28 @@
 import Image from "next/image"
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export function BasicIntro() {
+  useEffect(() => {
+    // Create a GSAP timeline
+    const timeline = gsap.timeline();
+
+    // Define the animations
+    timeline.to("#rocket", {
+      y: -400, // Move the rocketship image up by 50 pixels
+      duration: 1, // Animation duration
+      ease: "power2.inOut", // Easing function
+      scrollTrigger: {
+        trigger: "top",
+        start: "top center", // Start the animation when the top of the rocketship is at the center of the viewport
+        end: "bottom center", // End the animation when the bottom of the rocketship is at the center of the viewport
+        scrub: true, // Smoothly transition the animation while scrolling
+      },
+    });
+  }, []);
   return (
     <main>
       <div className="bg-black h-screen flex flex-col justify-center items-center">
@@ -11,7 +33,7 @@ export function BasicIntro() {
             In addition to my academic pursuits, I serve as the President of Layer Zero, the cybersecurity club at UNLV.
             I am always eager to explore and create new solutions, harnessing the power of technology to innovate and make a difference.</p>
         </div>
-        <img className="absolute h-[200px]" src="/spaceship.webp" alt="spaceship" />
+        <img className="absolute h-[200px]" id="rocket" src="/spaceship.webp" alt="spaceship" />
       </div>
     </main>
   )

@@ -3,37 +3,40 @@
 @tailwind utilities;
 
 html::-webkit-scrollbar {
-  display: none
+  display: none;
 }
 
-html, :root {
+html,
+:root {
   @apply bg-black text-white scroll-smooth overflow-x-hidden cursor-default;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
 @keyframes astroFloat {
-  0%, 100% {
-      transform: translateY(0);
-      rotate: -12deg;
+  0%,
+  100% {
+    transform: translateY(0);
+    rotate: -12deg;
   }
   50% {
-      transform: translateY(-20px);
+    transform: translateY(-20px);
   }
 }
 
 @keyframes satFloat {
-  0%, 100% {
-      transform: translateY(0);
-      rotate: 20deg;
+  0%,
+  100% {
+    transform: translateY(0);
+    rotate: 20deg;
   }
   50% {
-      transform: translateY(-100px);
+    transform: translateY(-100px);
   }
 }
 
 #astro {
-  animation: astroFloat 7s ease-in-out infinite; 
+  animation: astroFloat 7s ease-in-out infinite;
 }
 
 #sat {
