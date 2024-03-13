@@ -8,7 +8,7 @@ export function Hero() {
         <img className='absolute blur-[0px] h-[200px] -z-10 top-[60%] md:top-[50%] md:left-[10%] brightness-75' id='astro' src="/astro.webp" alt='astronaut model'></img>
         <img className='absolute blur-[0px] h-[250px] md:h-[600px] -z-10 bottom-[50%] md:bottom-[30%] md:right-[5%] brightness-75' id='sat' src="/sat.webp" alt='astronaut model'></img>
         <h1 className="text-6xl font-bold">Arian Izadi</h1>
-        <h2 className="text-2xl font-bold">Software Engineer & Security Researcher</h2>
+        <h2 className="text-2xl pt-3 font-bold">Software Engineer</h2>
       </div>
     </main>
 
